@@ -28,7 +28,7 @@ $borderColor: rgba(255, 255, 255, 0.452);
       }
 
       &__homeLink {
-        background-image: url(/images/icons/homeSecondColor.svg);
+        background-image: url(./images/icons/homeSecondColor.svg);
       }
 
       &__link {
@@ -89,14 +89,14 @@ $borderColor: rgba(255, 255, 255, 0.452);
   &__homeLink {
     height: 50px;
     width: 50px;
-    background-image: url(/images/icons/homeSecondColor.svg);
+    background-image: url(./images/icons/homeSecondColor.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 115px 115px;
     transition: all .3s;
 
     &--active {
-      background-image: url(/images/icons/homeSecondColor.svg);
+      background-image: url(./images/icons/homeSecondColor.svg);
     }
 
     @include tablet {

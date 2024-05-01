@@ -25,10 +25,10 @@
         }
 
         &--i {
-          background-image: url(/images/icons/instagramGrayColor.svg);
+          background-image: url(./images/icons/instagramGrayColor.svg);
 
           &:hover {
-            background-image: url(/images/icons/instagram.svg);
+            background-image: url(./images/icons/instagram.svg);
           }
         }
       }
@@ -59,7 +59,7 @@
     }
 
     &--i {
-      background-image: url(/images/icons/instagram.svg);
+      background-image: url(./images/icons/instagram.svg);
       background-position: -10px -5px;
       background-repeat: no-repeat;
       background-size: 52px 52px;

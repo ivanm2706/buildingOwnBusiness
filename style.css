@@ -157,16 +157,16 @@ button {
 }
 .icon--tel::before {
   content: "";
-  background-image: url(/images/icons/phone.svg);
+  background-image: url(./images/icons/phone.svg);
 }
 .icon--schedule::before {
   content: "";
-  background-image: url(/images/icons/clock.svg);
+  background-image: url(./images/icons/clock.svg);
 }
 
 .mainHeader {
   position: relative;
-  background-image: url(/images/house/large-house.jpg);
+  background-image: url(./images/house/large-house.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -214,7 +214,7 @@ button {
   background-color: hsla(0, 0%, 100%, 0.9);
 }
 .mainNav--stick .mainNav__homeLink {
-  background-image: url(/images/icons/homeSecondColor.svg);
+  background-image: url(./images/icons/homeSecondColor.svg);
 }
 .mainNav--stick .mainNav__link {
   color: #444;
@@ -264,14 +264,14 @@ button {
 .mainNav__homeLink {
   height: 50px;
   width: 50px;
-  background-image: url(/images/icons/homeSecondColor.svg);
+  background-image: url(./images/icons/homeSecondColor.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 115px 115px;
   transition: all 0.3s;
 }
 .mainNav__homeLink--active {
-  background-image: url(/images/icons/homeSecondColor.svg);
+  background-image: url(./images/icons/homeSecondColor.svg);
 }
 @media (max-width: 768px) {
   .mainNav__homeLink {
@@ -391,10 +391,10 @@ button {
   color: rgb(0, 0, 0);
 }
 .socialLinks--stick .socialLinks__link--i {
-  background-image: url(/images/icons/instagramGrayColor.svg);
+  background-image: url(./images/icons/instagramGrayColor.svg);
 }
 .socialLinks--stick .socialLinks__link--i:hover {
-  background-image: url(/images/icons/instagram.svg);
+  background-image: url(./images/icons/instagram.svg);
 }
 .socialLinks__list {
   display: flex;
@@ -420,7 +420,7 @@ button {
   text-indent: 8px;
 }
 .socialLinks__link--i {
-  background-image: url(/images/icons/instagram.svg);
+  background-image: url(./images/icons/instagram.svg);
   background-position: -10px -5px;
   background-repeat: no-repeat;
   background-size: 52px 52px;

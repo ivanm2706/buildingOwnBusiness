@@ -17,14 +17,14 @@
   &--tel {
     &::before {
       content: '';
-      background-image: url(/images/icons/phone.svg);
+      background-image: url(./images/icons/phone.svg);
     }
   }
 
   &--schedule {
     &::before {
       content: '';
-      background-image: url(/images/icons/clock.svg);
+      background-image: url(./images/icons/clock.svg);
     }
   }
 }
