@@ -1,0 +1,55 @@
+$borderColor: #0000001a;
+
+.masthead {
+  padding: 20px 15px;
+  width: $fullWidthScreen;
+
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include desktop {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__containerOfContacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & > :last-child {
+      margin-left: 40px;
+    }
+
+    @include desktop {
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 20px;
+    }
+  }
+
+  &__borderRight {
+    border-right: 1px solid $borderColor;
+    padding-inline: 90px 40px;
+  }
+
+  &__titleContact {
+    @include text($secondTextColor);
+    text-align: center;
+  }
+
+  &__subtitleContact {
+    @include text($textColor, 15px, 400, 1.4);
+
+    &--tel {
+      transition: color .3s;
+
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}

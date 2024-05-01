@@ -1,0 +1,202 @@
+$borderColor: rgba(255, 255, 255, 0.452);
+
+.mainNav {
+  transition: all .7s;
+  position: relative;
+
+  @include tablet {
+    display: block;
+    height: 60px;
+    padding: 0;
+    background-color: #625f5c7d;
+    overflow: hidden;
+  }
+  
+  &--stick {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+    @include tablet {
+      background-color: hsla(0, 0%, 100%, 0.9);
+    }
+
+    .mainNav {
+      &__wrapper {
+        background-color: hsla(0, 0%, 100%, 0.9);
+      }
+
+      &__homeLink {
+        background-image: url(/images/icons/homeSecondColor.svg);
+      }
+
+      &__link {
+        color: $mainTextColor;
+
+        &--active {
+          color: $secondaryTextColor;
+        }
+      }
+    }
+  }
+
+  &__wrapperAfterContainer {
+    display: flex;
+
+    & > :last-child {
+      flex-grow: 1;
+    }
+  }
+
+  &__wrapperBorder {
+    border: 1px solid transparent;
+
+    @include tablet {
+      border: none;
+    }
+
+    &--bottom {
+      border-bottom-color: $borderColor;
+    }
+
+    &--right {
+      border-right-color: $borderColor;
+    }
+  }
+
+  &__wrapperLinksAndSocial {
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s;
+
+    @include tablet {
+      flex-direction: column;
+      padding-top: 15px;
+      opacity: 0;
+    }
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__homeLinkWrapper {
+    padding-top: 18px;
+    padding-inline: 10px;
+  }
+
+  &__homeLink {
+    height: 50px;
+    width: 50px;
+    background-image: url(/images/icons/homeSecondColor.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115px 115px;
+    transition: all .3s;
+
+    &--active {
+      background-image: url(/images/icons/homeSecondColor.svg);
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__homeButton {
+    display: none;
+    padding: 2px 5px 5px 5px;
+    transition: all .3s;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffa5002b;
+    border-radius: 5px;
+
+    @include tablet {
+      display: block;
+    }
+
+    &:hover {
+      scale: 110%;
+    }
+
+    &--active {
+      right: 50px;
+      padding: 5px 5px 5px 5px;
+
+      & > :first-child {
+        rotate: 45deg;
+        transform: translate(3px, 2px);
+      }
+
+      & > :nth-child(2) {
+        border-bottom-color: transparent;
+      }
+
+      & > :last-child {
+        rotate: -45deg;
+        transform: translate(3px, -5px);
+      }
+    }
+
+    & span {
+      display: block;
+      width: 20px;
+      height: 5px;
+      border-bottom: 1px solid white;
+      transition: all .3s;
+    }
+
+    &--stick {
+      background-color: $lightBgColor;
+
+      & span {
+        border-bottom-color: black;
+      }
+      
+    }
+  }
+
+  &__listOfLinks {
+    display: flex;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    padding-block: 25px;
+    margin-inline: 16px; 
+    @include text(white, 16px, 500);
+    transition: all .3s;
+
+    @include tablet {
+      padding-block: 5px;
+      margin-inline: 16px; 
+    }
+
+    &:hover {
+      color: $secondaryColor;
+      scale: 105%;
+
+      @include tablet {
+        translate: 15px 0;
+        scale: 100%;
+      }
+    }
+
+    &--active {
+      color: $secondaryTextColor;
+    }
+
+    &--mobileHome {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+}

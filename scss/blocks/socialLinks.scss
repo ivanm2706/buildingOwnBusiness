@@ -1,0 +1,68 @@
+.socialLinks {
+  padding-inline: 10px;
+
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  &--stick {
+    .socialLinks {
+      &__link {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+
+      &__link {
+        &--fb {
+          color: rgba(0, 0, 0, 0.3);
+  
+          &:hover {
+            color: rgba(0, 0, 0);
+          }
+        }
+
+        &--i {
+          background-image: url(/images/icons/instagramGrayColor.svg);
+
+          &:hover {
+            background-image: url(/images/icons/instagram.svg);
+          }
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    margin-top: 24px;
+    gap: 14px;
+  }
+
+  &__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
+
+    &--fb {
+      @include text(#444, 32px, 500, 32px);
+      text-indent: 8px;
+    }
+
+    &--i {
+      background-image: url(/images/icons/instagram.svg);
+      background-position: -10px -5px;
+      background-repeat: no-repeat;
+      background-size: 52px 52px;
+    }
+  }
+}

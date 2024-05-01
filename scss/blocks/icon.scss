@@ -1,0 +1,30 @@
+.icon {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: -72px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--tel {
+    &::before {
+      content: '';
+      background-image: url(/images/icons/phone.svg);
+    }
+  }
+
+  &--schedule {
+    &::before {
+      content: '';
+      background-image: url(/images/icons/clock.svg);
+    }
+  }
+}

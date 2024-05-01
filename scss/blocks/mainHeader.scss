@@ -1,0 +1,24 @@
+.mainHeader {
+  position: relative;
+  background-image: url(/images/house/large-house.jpg);
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+
+  &__shaddow {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(17, 17, 17, 0.30);
+    -webkit-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+    -moz-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+    box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+  }
+
+  &__container {
+    position: absolute;
+    right: 0;
+    left: 0
+  }
+}

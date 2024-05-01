@@ -1,0 +1,440 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nav--top {
+  background-color: #444;
+  padding: 0 15px 0 15px;
+}
+
+.nav-top-list {
+  color: #c79d4b;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .nav-top-list {
+    justify-content: center;
+  }
+}
+.nav-top-list a {
+  padding: 4px 0 4px 0;
+  transition: color 0.3s;
+}
+.nav-top-list a:hover {
+  color: #fff;
+}
+
+.masthead {
+  padding: 20px 15px;
+  width: calc(100vw - 5px);
+}
+.masthead__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .masthead__container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.masthead__containerOfContacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.masthead__containerOfContacts > :last-child {
+  margin-left: 40px;
+}
+@media (max-width: 1024px) {
+  .masthead__containerOfContacts {
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+}
+.masthead__borderRight {
+  border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
+  padding-inline: 90px 40px;
+}
+.masthead__titleContact {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  text-align: center;
+}
+.masthead__subtitleContact {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.masthead__subtitleContact--tel {
+  transition: color 0.3s;
+}
+.masthead__subtitleContact--tel:hover {
+  color: #c79d4b;
+}
+
+.logo {
+  width: 250px;
+  height: 80px;
+  background-color: rgb(172, 206, 206);
+  margin: 0 auto;
+}
+
+.button {
+  color: #444;
+  font-size: 15px;
+  line-height: 45px;
+  font-weight: bold;
+  display: block;
+  height: max-content;
+  background-color: #c79d4b;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.button:hover {
+  color: white;
+  background-color: #444;
+}
+.button__link {
+  padding-inline: 30px;
+}
+
+.icon {
+  position: relative;
+}
+.icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  right: -72px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon--tel::before {
+  content: "";
+  background-image: url(/images/icons/phone.svg);
+}
+.icon--schedule::before {
+  content: "";
+  background-image: url(/images/icons/clock.svg);
+}
+
+.mainHeader {
+  position: relative;
+  background-image: url(/images/house/large-house.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 475px;
+}
+.mainHeader__shaddow {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(17, 17, 17, 0.3);
+  -webkit-box-shadow: inset 0px 0px 73px 26px rgb(92, 89, 92);
+  -moz-box-shadow: inset 0px 0px 73px 26px rgb(92, 89, 92);
+  box-shadow: inset 0px 0px 73px 26px rgb(92, 89, 92);
+}
+.mainHeader__container {
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.mainNav {
+  transition: all 0.7s;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .mainNav {
+    display: block;
+    height: 60px;
+    padding: 0;
+    background-color: rgba(98, 95, 92, 0.4901960784);
+    overflow: hidden;
+  }
+}
+.mainNav--stick {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .mainNav--stick {
+    background-color: hsla(0, 0%, 100%, 0.9);
+  }
+}
+.mainNav--stick .mainNav__wrapper {
+  background-color: hsla(0, 0%, 100%, 0.9);
+}
+.mainNav--stick .mainNav__homeLink {
+  background-image: url(/images/icons/homeSecondColor.svg);
+}
+.mainNav--stick .mainNav__link {
+  color: #444;
+}
+.mainNav--stick .mainNav__link--active {
+  color: #c79d4b;
+}
+.mainNav__wrapperAfterContainer {
+  display: flex;
+}
+.mainNav__wrapperAfterContainer > :last-child {
+  flex-grow: 1;
+}
+.mainNav__wrapperBorder {
+  border: 1px solid transparent;
+}
+@media (max-width: 768px) {
+  .mainNav__wrapperBorder {
+    border: none;
+  }
+}
+.mainNav__wrapperBorder--bottom {
+  border-bottom-color: rgba(255, 255, 255, 0.452);
+}
+.mainNav__wrapperBorder--right {
+  border-right-color: rgba(255, 255, 255, 0.452);
+}
+.mainNav__wrapperLinksAndSocial {
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+@media (max-width: 768px) {
+  .mainNav__wrapperLinksAndSocial {
+    flex-direction: column;
+    padding-top: 15px;
+    opacity: 0;
+  }
+}
+.mainNav__wrapperLinksAndSocial--active {
+  opacity: 1;
+}
+.mainNav__homeLinkWrapper {
+  padding-top: 18px;
+  padding-inline: 10px;
+}
+.mainNav__homeLink {
+  height: 50px;
+  width: 50px;
+  background-image: url(/images/icons/homeSecondColor.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 115px 115px;
+  transition: all 0.3s;
+}
+.mainNav__homeLink--active {
+  background-image: url(/images/icons/homeSecondColor.svg);
+}
+@media (max-width: 768px) {
+  .mainNav__homeLink {
+    display: none;
+  }
+}
+.mainNav__homeButton {
+  display: none;
+  padding: 2px 5px 5px 5px;
+  transition: all 0.3s;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(255, 165, 0, 0.168627451);
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .mainNav__homeButton {
+    display: block;
+  }
+}
+.mainNav__homeButton:hover {
+  scale: 110%;
+}
+.mainNav__homeButton--active {
+  right: 50px;
+  padding: 5px 5px 5px 5px;
+}
+.mainNav__homeButton--active > :first-child {
+  rotate: 45deg;
+  transform: translate(3px, 2px);
+}
+.mainNav__homeButton--active > :nth-child(2) {
+  border-bottom-color: transparent;
+}
+.mainNav__homeButton--active > :last-child {
+  rotate: -45deg;
+  transform: translate(3px, -5px);
+}
+.mainNav__homeButton span {
+  display: block;
+  width: 20px;
+  height: 5px;
+  border-bottom: 1px solid white;
+  transition: all 0.3s;
+}
+.mainNav__homeButton--stick {
+  background-color: #f2f2f2;
+}
+.mainNav__homeButton--stick span {
+  border-bottom-color: black;
+}
+.mainNav__listOfLinks {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .mainNav__listOfLinks {
+    flex-direction: column;
+  }
+}
+.mainNav__link {
+  padding-block: 25px;
+  margin-inline: 16px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .mainNav__link {
+    padding-block: 5px;
+    margin-inline: 16px;
+  }
+}
+.mainNav__link:hover {
+  color: #c79d4b;
+  scale: 105%;
+}
+@media (max-width: 768px) {
+  .mainNav__link:hover {
+    translate: 15px 0;
+    scale: 100%;
+  }
+}
+.mainNav__link--active {
+  color: #c79d4b;
+}
+.mainNav__link--mobileHome {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mainNav__link--mobileHome {
+    display: block;
+  }
+}
+
+.socialLinks {
+  padding-inline: 10px;
+}
+@media (max-width: 1024px) {
+  .socialLinks {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .socialLinks {
+    display: block;
+  }
+}
+.socialLinks--stick .socialLinks__link {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.socialLinks--stick .socialLinks__link--fb {
+  color: rgba(0, 0, 0, 0.3);
+}
+.socialLinks--stick .socialLinks__link--fb:hover {
+  color: rgb(0, 0, 0);
+}
+.socialLinks--stick .socialLinks__link--i {
+  background-image: url(/images/icons/instagramGrayColor.svg);
+}
+.socialLinks--stick .socialLinks__link--i:hover {
+  background-image: url(/images/icons/instagram.svg);
+}
+.socialLinks__list {
+  display: flex;
+  margin-top: 24px;
+  gap: 14px;
+}
+.socialLinks__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.socialLinks__link:hover {
+  background-color: #c79d4b;
+}
+.socialLinks__link--fb {
+  color: #444;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 500;
+  text-indent: 8px;
+}
+.socialLinks__link--i {
+  background-image: url(/images/icons/instagram.svg);
+  background-position: -10px -5px;
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar-track {
+  background: rgba(79, 118, 138, 0.4784313725);
+}
+
+/*# sourceMappingURL=style.css.map */

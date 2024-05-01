@@ -1,0 +1,19 @@
+.button {
+  @include text($mainTextColor, 15px, bold, 45px);
+
+  display: block;
+  height: max-content;
+  background-color: $secondaryColor;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all .3s;
+
+  &:hover {
+    color: white;
+    background-color: $mainColor;
+  }
+
+  &__link {
+    padding-inline: 30px;
+  }
+}
