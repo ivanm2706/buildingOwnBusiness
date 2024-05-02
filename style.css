@@ -93,6 +93,11 @@ button {
   border-right: 1px solid rgba(0, 0, 0, 0.1019607843);
   padding-inline: 90px 40px;
 }
+@media (max-width: 768px) {
+  .masthead__borderRight {
+    border-right: none;
+  }
+}
 .masthead__titleContact {
   color: #777;
   font-size: 15px;

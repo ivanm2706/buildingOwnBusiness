@@ -1,3 +1,5 @@
+console.log('Running')
+
 const mainNav = document.querySelector('#mainNav');
 const socialLinks = document.querySelector('#socialLinks');
 const listOfNavLinks = document.querySelectorAll('[data-link="link"]');
@@ -43,6 +45,7 @@ function addActiveLinkWhenLoadDoc() {
 function toggleMobileMainNavButton() {
   mainNavHomeButton.classList.toggle('mainNav__homeButton--active');
   mainNavWrapperLinksAndSocial.classList.toggle('mainNav__wrapperLinksAndSocial--active');
+  console.log('Running')
 
   const computedStylesMainNav = window.getComputedStyle(mainNav);
   
@@ -51,5 +54,6 @@ function toggleMobileMainNavButton() {
   } else {
     mainNav.style.height = '60px';
   }
+console.log('Running')
   
 }
