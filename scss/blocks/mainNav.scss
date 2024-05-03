@@ -17,6 +17,7 @@ $borderColor: rgba(255, 255, 255, 0.452);
     left: 0;
     right: 0;
     top: 0;
+    z-index: 10;
     
     @include tablet {
       background-color: hsla(0, 0%, 100%, 0.9);

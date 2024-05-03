@@ -1,0 +1,72 @@
+.section {
+  &__services {
+    display: flex;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+
+      // & > :first-child {
+      //   flex-grow: 1;
+      // }
+    }
+  }
+
+  &__servisesTitleInfo {
+    background-color: white;
+    padding: 30px 15px;
+    max-width: 300px;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  &__servicesBlock {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+
+    @include xtablet {
+      grid-template-columns: auto auto;
+    }
+
+    @include mobile {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__serviseTitle {
+    @include text($textColor, 30px, 500, 1.2);
+    margin-bottom: 20px;
+
+    & > span {
+      font-weight: bold;
+    }
+  }
+
+  &__serviseLines {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+
+  &__servicesLineShort {
+    height: 2px;
+    width: 60px;
+    border-bottom: 1px solid $secondaryColor;
+    
+  }
+
+  &__servicesLinelong {
+    height: 2px;
+    min-width: 60px;
+    border-bottom: 1px solid $lightBgColor;
+    flex-grow: 1;
+  }
+
+  &__serviceSubtitle {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    margin-bottom: 20px;
+  }
+}

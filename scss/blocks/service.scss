@@ -1,0 +1,55 @@
+.service {
+  display: flex;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  min-width: 180px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  
+
+  &__shaddow {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      background-color: rgb(17, 17, 17, 0.30);
+      -webkit-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+      -moz-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+      box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
+
+      .service__title {
+        color: $secondaryTextColor;
+      }
+    }
+  }
+
+  &__title {
+    @include text(white, 20px, 400);
+    position: absolute;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  &__imgBlock {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
