@@ -14,11 +14,7 @@ mainNavHomeButton.addEventListener('click', toggleMobileMainNavButton);
 function addActiveLinkWhenLoadDoc() {
   const hash = location.hash;
 
-  console.log(listOfNavLinks)
-
   listOfNavLinks.forEach(e => {
-    console.log(hash)
-    console.log(e.hash)
     if (e.hash === hash) {
       e.classList.add('mainNav__link--active');
     }

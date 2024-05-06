@@ -15,6 +15,7 @@
     inset: 0;
     cursor: pointer;
     transition: all .3s;
+    background-color: #33343361;
 
     &:hover {
       background-color: rgb(17, 17, 17, 0.30);
@@ -37,8 +38,17 @@
     bottom: 0;
     left: 0;
     right: 0;
+    top: 0;
     cursor: pointer;
     transition: all .3s;
+
+    & > span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+    }
   }
 
   &__imgBlock {

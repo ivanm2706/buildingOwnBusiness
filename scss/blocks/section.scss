@@ -110,10 +110,19 @@
     display: grid;
     grid-template-columns: minmax(100px, 40vw) auto;
     gap: 20px;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__logoWrapper {
     background-color: antiquewhite;
+    height: 100px;
+
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
 
   &__qTitle {
@@ -206,10 +215,10 @@
   &__COurBenefitsList {
     display: flex;
     gap: 15px;
-  }
 
-  &__COurBenefit {
-
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__Cicon {
@@ -308,6 +317,34 @@
     @include text($secondaryTextColor, 24px, 400, 1.1);
     min-width: 180px;
   }
-}
 
+// projects
+
+  &__PTitleBlock {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__Ptitle {
+    @include text(black, 30px, 400, 1.1);
+  }
+
+  &__PSeeMore {
+    padding: 3px 8px;
+    border: 1px solid $secondaryColor;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &__PSeeMoreLink {
+    @include text($secondaryTextColor, 19px, 400, 1.1);
+    transition: all .3s;
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+}
 

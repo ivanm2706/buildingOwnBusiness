@@ -1,0 +1,126 @@
+.projects {
+  @include xtablet {
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+
+  &__nav {
+    padding-inline: 10px;
+    border-bottom: 2px solid $bgGrayColor;
+    overflow-x: scroll;
+  }
+
+  &__navList {
+    display: flex;
+    gap: 20px;
+
+    @include xtablet {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    @include text($colorLightSecond, 15px, bold, 1.8);
+    min-width: 99px;
+    text-align: center;
+    padding-block: 15px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: all .3s;
+    position: relative;
+    bottom: 0;
+
+    &:hover {
+      border-bottom: 2px solid $secondaryColor;
+      color: $textColor;
+    }
+    &--active {
+      border-bottom: 2px solid $secondaryColor;
+      color: $textColor;
+    }
+  }
+
+  &__items {
+    padding-block: 15px;
+    border-bottom: 2px solid $bgGrayColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 280px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    min-width: 180px;
+    height: 100%;
+    max-height: 180px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__shaddow {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    transition: all .5s;
+    opacity: 0;
+
+    &:hover {
+      background-color: #1e1e1ec7;
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    @include text(white, 18px, 400, 1.1);
+    display: block;
+    padding: 10px 0 0 10px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: $secondaryTextColor;
+    }
+  }
+
+  &__imgBlock {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__type {
+    @include text($colorTextLight);
+    display: block;
+    padding-inline: 10px;
+  }
+
+  &__button {
+    @include text(white, 15px, 400, 1.1);
+    
+    border: 2px solid white;
+    padding: 10px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    transition: all .3s;
+
+    &:hover {
+      border-color: $secondaryColor;
+      background-color: $secondaryColor;
+      color: black
+    }
+  }
+}

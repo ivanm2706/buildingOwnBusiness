@@ -482,6 +482,9 @@ button {
 .main__section--p50 {
   padding: 50px 15px;
 }
+.main__section--projects {
+  padding: 50px 15px 0 15px;
+}
 
 .section__services {
   display: flex;
@@ -590,8 +593,19 @@ button {
   grid-template-columns: minmax(100px, 40vw) auto;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .section__wrapperCommonQuestion {
+    display: block;
+  }
+}
 .section__logoWrapper {
   background-color: antiquewhite;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  .section__logoWrapper {
+    margin-bottom: 20px;
+  }
 }
 .section__qTitle {
   color: #333;
@@ -678,6 +692,11 @@ button {
 .section__COurBenefitsList {
   display: flex;
   gap: 15px;
+}
+@media (max-width: 480px) {
+  .section__COurBenefitsList {
+    flex-direction: column;
+  }
 }
 .section__Cicon {
   display: inline-block;
@@ -774,6 +793,34 @@ button {
   font-weight: 400;
   min-width: 180px;
 }
+.section__PTitleBlock {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.section__Ptitle {
+  color: black;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.section__PSeeMore {
+  padding: 3px 8px;
+  border: 1px solid #c79d4b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.section__PSeeMoreLink {
+  color: #c79d4b;
+  font-size: 19px;
+  line-height: 1.1;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.section__PSeeMoreLink:hover {
+  color: #333;
+}
 
 .service {
   display: flex;
@@ -790,6 +837,7 @@ button {
   inset: 0;
   cursor: pointer;
   transition: all 0.3s;
+  background-color: rgba(51, 52, 51, 0.3803921569);
 }
 .service__shaddow:hover {
   background-color: rgba(17, 17, 17, 0.3);
@@ -812,8 +860,15 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   cursor: pointer;
   transition: all 0.3s;
+}
+.service__title > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .service__imgBlock {
   height: 100%;
@@ -1063,7 +1118,7 @@ button {
 .success, .error {
   position: fixed;
   top: 90px;
-  right: -100%;
+  right: -180%;
   padding: 20px;
   border-radius: 10px;
   transition: all 0.5s;
@@ -1090,6 +1145,130 @@ button {
 }
 .success--active {
   right: 20px;
+}
+
+@media (max-width: 960px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 150px auto;
+  }
+}
+.projects__nav {
+  padding-inline: 10px;
+  border-bottom: 2px solid #eee;
+  overflow-x: scroll;
+}
+.projects__navList {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 960px) {
+  .projects__navList {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.projects__link {
+  color: #999;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: bold;
+  min-width: 99px;
+  text-align: center;
+  padding-block: 15px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  bottom: 0;
+}
+.projects__link:hover {
+  border-bottom: 2px solid #c79d4b;
+  color: #333;
+}
+.projects__link--active {
+  border-bottom: 2px solid #c79d4b;
+  color: #333;
+}
+.projects__items {
+  padding-block: 15px;
+  border-bottom: 2px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.projects__item {
+  display: flex;
+  max-width: 280px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  min-width: 180px;
+  height: 100%;
+  max-height: 180px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.projects__shaddow {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.projects__shaddow:hover {
+  background-color: rgba(30, 30, 30, 0.7803921569);
+  opacity: 1;
+}
+.projects__title {
+  color: white;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
+  display: block;
+  padding: 10px 0 0 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.projects__title:hover {
+  color: #c79d4b;
+}
+.projects__imgBlock {
+  height: 100%;
+  width: 100%;
+}
+.projects__img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.projects__type {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  display: block;
+  padding-inline: 10px;
+}
+.projects__button {
+  color: white;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 400;
+  border: 2px solid white;
+  padding: 10px 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  right: 15px;
+  transition: all 0.3s;
+}
+.projects__button:hover {
+  border-color: #c79d4b;
+  background-color: #c79d4b;
+  color: black;
 }
 
 html::-webkit-scrollbar {
