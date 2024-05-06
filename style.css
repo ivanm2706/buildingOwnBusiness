@@ -736,6 +736,44 @@ button {
   font-weight: 400;
   margin-bottom: 20px;
 }
+.section__wrapperAbout {
+  padding: 30px 15px;
+}
+.section__citeAbout {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  padding: 15px 10px;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+.section__AItemWrapper {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .section__AItemWrapper {
+    flex-direction: column;
+  }
+}
+.section__infoAbout {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.section__titleAbout {
+  color: #c79d4b;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  min-width: 180px;
+}
 
 .service {
   display: flex;

@@ -267,6 +267,47 @@
     @include text($secondTextColor, 15px, 400, 1.8);
     margin-bottom: 20px;
   }
+
+
+  // section about 
+  &__wrapperAbout {
+    padding: 30px 15px;
+  }
+
+  &__citeAbout {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    background-color: $lightBgColor;
+    padding: 15px 10px;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+  }
+
+  &__aboutBlock {
+    & > {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__AItemWrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    @include tablet {
+      flex-direction: column
+    }
+  }
+
+  &__infoAbout {
+    @include text($secondTextColor, 15px, 400, 1.8);
+  }
+
+  &__titleAbout {
+    @include text($secondaryTextColor, 24px, 400, 1.1);
+    min-width: 180px;
+  }
 }
 
 
