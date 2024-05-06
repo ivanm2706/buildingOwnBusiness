@@ -103,4 +103,170 @@
       grid-template-columns: auto;
     }
   }
+
+  // commonQuest
+
+  &__wrapperCommonQuestion {
+    display: grid;
+    grid-template-columns: minmax(100px, 40vw) auto;
+    gap: 20px;
+  }
+
+  &__logoWrapper {
+    background-color: antiquewhite;
+  }
+
+  &__qTitle {
+    @include text($textColor, 24px, 400, 1.1);
+    margin-bottom: 20px;
+  }
+
+  &__qsubtitle {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    margin-bottom: 25px;
+  }
+
+  &__down-list {
+
+  }
+
+  &__wrapperListDown {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+    padding-block-start: 15px;
+    border-bottom: 1px solid $secondTextColor;
+
+    &--open {
+      .section {
+        &__responceLD {
+          margin-bottom: 20px;
+          height: max-content;
+        }
+      }
+    }
+  }
+
+  &__iconLD {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 2px solid $secondaryColor;
+    border-radius: 50%;
+    @include text($secondaryColor, 24px, 600, 20px);
+    padding: 2px 0 0 4px;
+  }
+
+  &__questionListDown {
+    @include text($mainDarkBgColor, 16px, 400, 1.8);
+    margin-bottom: 20px;
+  }
+
+  &__responceLDwrapper {
+    height: 0;
+    overflow: hidden;
+    transition: all .3s;
+  }
+
+  &__responceLD {
+    @include text($secondTextColor, 15px, 400, 27px);
+    margin-bottom: 0;
+    transition: all .3s ease-in-out;
+  }
+
+  // wrapper contact
+
+  
+
+  &__wrapperContact {
+    display: flex;
+    gap: 15px;
+    padding: 50px 15px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 50px;
+    }
+  } 
+
+  &__CwhoWeAre {
+    
+  }
+
+  &__CTitle {
+    @include text($textColor, 24px, 400, 1.1);
+    margin: 30px 0 20px 0;
+  }
+
+  &__CinfoWhoWeAre {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    margin-bottom: 50px;
+  }
+
+  &__COurBenefitsList {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__COurBenefit {
+
+  }
+
+  &__Cicon {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &--clock {
+      background-image: url(./images/icons/clock.svg);
+    }
+
+    &--files {
+      background-image: url(./images/icons/files.svg);
+    }
+
+    &--users {
+      background-image: url(./images/icons/users.svg);
+      background-size: 51px;
+      background-position: -18px -15px;
+    }
+  }
+
+  &__CBenefitNum {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-block: 10px;
+    margin-block-end: 10px;
+    border-bottom: 1px solid #77777759;
+
+    & > p {
+      @include text($textColor, 24px, 400, 1.8);
+    }
+  }
+
+  &__CBenefitTextInfo {
+    @include text($secondTextColor, 15px, 400, 1.8);
+  }
+
+  &__formWrapper {
+    border: 10px solid $lightBgColor;
+    padding: 30px;
+
+  }
+
+  &__titleForm {
+    @include text($textColor, 24px, 400, 1.1);
+    margin-bottom: 20px;
+  }
+
+  &__descriptionForm {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    margin-bottom: 20px;
+  }
 }
+
+

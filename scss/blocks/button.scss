@@ -8,13 +8,53 @@
   border-radius: 5px;
   transition: all .3s;
 
-  &--exp {
-    background-color: #fff;
-  }
-
   &:hover {
     color: white;
     background-color: $mainColor;
+  }
+
+  &--spin {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      border: 2px solid #685e5e;
+      border-top-color: transparent;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotate 1s linear infinite;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      };
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: #ffffffb3;
+      border-radius: 5px;
+    }
+   
+  }
+
+  &--center {
+    margin: 0 auto;
+  }
+
+  &--exp {
+    background-color: #fff;
   }
 
   &__link {

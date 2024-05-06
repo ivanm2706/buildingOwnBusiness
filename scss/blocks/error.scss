@@ -1,0 +1,29 @@
+%message {
+  position: fixed;
+  top: 90px;
+  right: -100%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all .5s;
+  user-select: none;
+}
+
+.error {
+  @extend %message;
+  background-color: #e17d7dab;
+  @include text(red, 25px, 900, 1.8);
+
+  &--active {
+    right: 20px;
+  }
+}
+
+.success {
+  @extend %message;
+  background-color: #a0e17dab;
+  @include text(#00742f, 25px, 900, 1.8);
+
+  &--active {
+    right: 20px;
+  }
+}

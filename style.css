@@ -140,12 +140,46 @@ button {
   border-radius: 5px;
   transition: all 0.3s;
 }
-.button--exp {
-  background-color: #fff;
-}
 .button:hover {
   color: white;
   background-color: #444;
+}
+.button--spin {
+  position: relative;
+}
+.button--spin::after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #685e5e;
+  border-top-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.button--spin::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.7019607843);
+  border-radius: 5px;
+}
+.button--center {
+  margin: 0 auto;
+}
+.button--exp {
+  background-color: #fff;
 }
 .button__link {
   padding-inline: 30px;
@@ -551,6 +585,157 @@ button {
     grid-template-columns: auto;
   }
 }
+.section__wrapperCommonQuestion {
+  display: grid;
+  grid-template-columns: minmax(100px, 40vw) auto;
+  gap: 20px;
+}
+.section__logoWrapper {
+  background-color: antiquewhite;
+}
+.section__qTitle {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.section__qsubtitle {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.section__wrapperListDown {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  padding-block-start: 15px;
+  border-bottom: 1px solid #777;
+}
+.section__wrapperListDown--open .section__responceLD {
+  margin-bottom: 20px;
+  height: max-content;
+}
+.section__iconLD {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #c79d4b;
+  border-radius: 50%;
+  color: #c79d4b;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 2px 0 0 4px;
+}
+.section__questionListDown {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.section__responceLDwrapper {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.section__responceLD {
+  color: #777;
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 400;
+  margin-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.section__wrapperContact {
+  display: flex;
+  gap: 15px;
+  padding: 50px 15px;
+}
+@media (max-width: 768px) {
+  .section__wrapperContact {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.section__CTitle {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 30px 0 20px 0;
+}
+.section__CinfoWhoWeAre {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.section__COurBenefitsList {
+  display: flex;
+  gap: 15px;
+}
+.section__Cicon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.section__Cicon--clock {
+  background-image: url(./images/icons/clock.svg);
+}
+.section__Cicon--files {
+  background-image: url(./images/icons/files.svg);
+}
+.section__Cicon--users {
+  background-image: url(./images/icons/users.svg);
+  background-size: 51px;
+  background-position: -18px -15px;
+}
+.section__CBenefitNum {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-block: 10px;
+  margin-block-end: 10px;
+  border-bottom: 1px solid rgba(119, 119, 119, 0.3490196078);
+}
+.section__CBenefitNum > p {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.section__CBenefitTextInfo {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.section__formWrapper {
+  border: 10px solid #f2f2f2;
+  padding: 30px;
+}
+.section__titleForm {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.section__descriptionForm {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 
 .service {
   display: flex;
@@ -739,6 +924,134 @@ button {
   line-height: 1.8;
   font-weight: 400;
   text-align: center;
+}
+
+.form > textarea, .form > select, .form > input {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 400;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0.0509803922);
+  border: 1px solid rgba(0, 0, 0, 0.0588235294);
+  padding: 10px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  display: block;
+}
+
+.form > textarea:hover, .form > select:hover, .form > input:hover {
+  -webkit-box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+}
+
+.form > textarea:focus, .form > select:focus, .form > input:focus {
+  outline: none;
+  border-color: #c79d4b;
+  background-color: #fff;
+}
+
+.form {
+  display: block;
+}
+.form > input:first-child {
+  margin-bottom: 0;
+}
+.form > input:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.form > input::placeholder {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form > select {
+  color: #777;
+  cursor: pointer;
+}
+.form > select::placeholder {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form > select > option {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form > select:focus {
+  background-color: rgba(0, 0, 0, 0.0509803922);
+}
+.form > textarea {
+  height: 100px;
+  resize: none;
+}
+.form > textarea::placeholder {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.form > textarea::-webkit-scrollbar {
+  width: 5px;
+}
+.form > textarea::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 10px;
+}
+.form > textarea::-webkit-scrollbar-track {
+  background: rgba(164, 185, 196, 0.2745098039);
+}
+.form__requiredField {
+  margin-block-end: 15px;
+  margin-inline-start: 10px;
+  color: red;
+  font-size: 13px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+.form__requiredFieldWrapper {
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+.success, .error {
+  position: fixed;
+  top: 90px;
+  right: -100%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  user-select: none;
+}
+
+.error {
+  background-color: rgba(225, 125, 125, 0.6705882353);
+  color: red;
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight: 900;
+}
+.error--active {
+  right: 20px;
+}
+
+.success {
+  background-color: rgba(160, 225, 125, 0.6705882353);
+  color: #00742f;
+  font-size: 25px;
+  line-height: 1.8;
+  font-weight: 900;
+}
+.success--active {
+  right: 20px;
 }
 
 html::-webkit-scrollbar {

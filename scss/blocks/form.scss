@@ -1,0 +1,118 @@
+%inputStyle {
+  @include text($textColor, 15px, 400, 1.1);
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #0000000d;
+  border: 1px solid #0000000f;
+  padding: 10px;
+  border-radius: 2px;
+  transition: all .3s;
+  display: block;
+}
+
+%hoverInputStyle {
+  -webkit-box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 7px 21px -12px rgba(0, 0, 0, 0.75);
+}
+
+%targetStyle {
+  outline: none;
+  border-color: $secondaryColor;
+  background-color: #fff;
+}
+
+.form {
+  display: block;
+
+  & > input {
+    @extend %inputStyle;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 0;
+    }
+
+    &::placeholder {
+      @include text($secondTextColor, 15px, 400, 1.5);
+    }
+
+    &:hover {
+      @extend %hoverInputStyle;
+    }
+
+    &:focus {
+      @extend %targetStyle;
+    }
+  }
+
+  & > select {
+    @extend %inputStyle;
+    color: $secondTextColor;
+    cursor: pointer;
+
+    &::placeholder {
+      @include text($secondTextColor, 15px, 400, 1.5);
+    }
+
+    & > option {
+      @include text($secondTextColor, 15px, 400, 1.5);
+    }
+
+    &:hover {
+      @extend %hoverInputStyle;  
+    }
+
+    &:focus {
+      @extend %targetStyle;
+      background-color: #0000000d;
+    }
+  }
+
+  & > textarea {
+    @extend %inputStyle;
+    height: 100px;
+    resize: none;
+
+    &::placeholder {
+      @include text($secondTextColor, 15px, 400, 1.5);
+    }
+
+    &:hover {
+      @extend %hoverInputStyle;  
+    }
+
+    &:focus {
+      @extend %targetStyle;
+    }
+
+    &::-webkit-scrollbar {
+      width: $scrollBar;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $secondTextColor;
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: #a4b9c446;
+    }
+  }
+
+  &__requiredField {
+    margin-block-end: 15px;
+    margin-inline-start: 10px;
+    @include text(red, 13px, 400, 1.1);
+  }
+
+  &__requiredFieldWrapper {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 15px;
+    transition: all .3s;
+  }
+}
