@@ -39,11 +39,19 @@ $borderColor: rgba(255, 255, 255, 0.452);
           color: $secondaryTextColor;
         }
       }
+
+      &__wrapperAfterContainer {
+        background-color: transparent;
+      }
     }
   }
 
   &__wrapperAfterContainer {
     display: flex;
+    padding-bottom: 10px;
+    background-color: #323232ad;
+    position: relative;
+    z-index: 2;
 
     & > :last-child {
       flex-grow: 1;
@@ -164,6 +172,41 @@ $borderColor: rgba(255, 255, 255, 0.452);
 
     @include tablet {
       flex-direction: column;
+    }
+
+    &--propServices {
+      flex-direction: column;
+      gap: 5px;
+
+      & .mainNav__link {
+        @include text($textColor, 15px, 400, 1.1);
+
+        text-transform: uppercase;
+        border: 1px solid $colorTextLight;
+        padding: 15px;
+        position: relative;
+        max-width: 230px;
+
+        &--active {
+          background-color: $secondaryColor;
+        }
+
+        &:hover {
+          scale: none;
+          color: $textColor;
+          background-color: $secondaryColor;
+        }
+  
+        &::after {
+          content: '>';
+          @include text($textColor, 15px, 500, 1.1);
+          position: absolute;
+          right: 10px;
+          top: 15px;
+          bottom: 0;
+
+        }
+      }
     }
   }
 

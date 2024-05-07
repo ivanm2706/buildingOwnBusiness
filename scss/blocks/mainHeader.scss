@@ -10,7 +10,7 @@
   &__shaddow {
     position: absolute;
     inset: 0;
-    background-color: rgb(17, 17, 17, 0.30);
+    background-color: #11111194;
     -webkit-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
     -moz-box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
     box-shadow: inset 0px 0px 73px 26px rgba(92,89,92,1);
@@ -19,6 +19,53 @@
   &__container {
     position: absolute;
     right: 0;
-    left: 0
+    left: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &__containerNavInfo {
+    padding-inline: 15px;
+    position: absolute;
+    bottom: 160px;
+    left: 0;
+    right: 0;
+  }
+
+  &__Maintitle {
+    @include text(#fff, 40px, 400, 1.1);
+    margin-bottom: 5px;
+  }
+
+  &__blockNavShowWhereYouAre {
+    @include text($colorTextLight, 15px, 400, 1.8);
+    display: flex;
+    gap: 15px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__pagesContainer {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__previosPage {
+    color: $secondaryTextColor;
+    border-bottom: 1px solid transparent;
+    transition: all .3s;
+    position: relative;
+
+    &:hover {
+      border-bottom-color: $secondaryTextColor;
+    }
+
+    &::after {
+      content: '>';
+      position: absolute;
+      right: -20px;
+    }
   }
 }
