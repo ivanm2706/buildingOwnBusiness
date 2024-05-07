@@ -63,11 +63,11 @@ function submitForm(e) {
   
 // Замените 'YOUR_BOT_TOKEN' на токен вашего бота
 // создать бота через @BotFather => /newbot
-const botToken = '6638623940:AAFB2ScV-fOG0XFx_T3PHDnaPadPwb7ANY8';
+const botToken = '';
 
 // Замените 'YOUR_CHAT_ID' на ID чата, в который вы хотите отправить сообщение
 // @userinfobot - ищем через @userinfobot
-const chatId = '1007310681';
+const chatId = '';
 
 // URL для отправки сообщения
 const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
