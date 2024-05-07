@@ -476,6 +476,9 @@ button {
 .main__section--greyBg {
   background-color: #eee;
 }
+.main__section--grey2Bg {
+  background-color: #f2f2f2;
+}
 .main__section--darkBg {
   background-color: #2a2a2a;
 }
@@ -495,7 +498,7 @@ button {
     flex-direction: column;
   }
 }
-.section__servisesTitleInfo {
+.section__servicesTitleInfo {
   background-color: white;
   padding: 30px 15px;
   max-width: 300px;
@@ -507,6 +510,8 @@ button {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 960px) {
   .section__servicesBlock {
@@ -517,6 +522,27 @@ button {
   .section__servicesBlock {
     grid-template-columns: auto;
   }
+}
+.section__wrapService {
+  height: 100%;
+  width: 100%;
+  max-width: 306px;
+  min-width: 180px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.section__wrapService > .service {
+  height: fit-content;
+}
+.section__serviceInfoText {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  margin: 20px;
+}
+.section__buttonService {
+  margin: 0 20px 20px 20px;
 }
 .section__serviseTitle {
   color: #333;
@@ -821,16 +847,38 @@ button {
 .section__PSeeMoreLink:hover {
   color: #333;
 }
+.section__subtitleContact {
+  color: #c79d4b;
+  font-size: 15px;
+  line-height: 2;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.section__subtitleContact:hover {
+  color: #333;
+}
+.section__subtitleSchedule {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  display: block;
+  margin-top: 15px;
+}
+.section__CwhoWeAre--min {
+  min-width: 250px;
+}
 
 .service {
   display: flex;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  min-width: 180px;
   height: 100%;
   width: 100%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  max-width: 306px;
+  min-width: 180px;
 }
 .service__shaddow {
   position: absolute;
@@ -1156,7 +1204,6 @@ button {
 .projects__nav {
   padding-inline: 10px;
   border-bottom: 2px solid #eee;
-  overflow-x: scroll;
 }
 .projects__navList {
   display: flex;

@@ -60,7 +60,7 @@
             </div>
             </div>
 
-            <div class="button">
+            <div class="section__buttonService button">
               <a href="../contact" class="button__link">request a quote</a>
             </div>
           </div>
@@ -141,40 +141,57 @@
   <main class="main">
     <section class="main__section section">
       <div class="container">
-        <div class="section__wrapperAbout">
-          <div class="section__citeAbout">
-            “At Ediss Remodeling Company, we’re committed to customer satisfaction proving it with our level of service for many years. From product innovation and high-quality materials to our affordable remodeling options, we go above and beyond to meet the needs of our customers.”
+        <div class="section__wrapperContact">
+          <div class="section__CwhoWeAre section__CwhoWeAre--min">
+            <h2 class="section__CTitle">
+              Contact us
+            </h2>
+
+            <div class="">
+              <a class='section__subtitleContact' href="tel:9016528276">+1 901 652 8276</a>
+  
+              <a class='section__subtitleContact' href="tel:9015846234">+1 901 584 6234</a> 
+  
+              <a class='section__subtitleContact' href="mailto:ivanmorhun.dev@gmail.com">ivanmorhun.dev@gmail.com</a> 
+  
+              <span class="section__subtitleSchedule">Mon - Sat: 8:00 AM - 8:00 PM</span>
+            </div>
           </div>
 
-          <div class="section__aboutBlock">
-            <div class="section__AItemWrapper">
-              <div class="section__aboutTitleBlock">
-                <h2 class="section__titleAbout">Our Story</h2>
-              </div>
+          <div class="section__formWrapper">
+            <h2 class="section__titleForm">Request a quick quote</h2>
 
-              <p class="section__infoAbout">
-                Ediss Remodeling Company is a home improvement company serving everywhere from Fort Lauderdale to Miami since 2014. Your home remodeling project is very important to you and to us. This is why we start every project with a free in-home design consultation. Our home remodeling design consultant will listen to your specific design ideas, review the space where you desire to remodel and work with you to develop your personalized plan.
-              </p>
-            </div>
+            <p class="section__descriptionForm">
+              Please tell us about your project. A representative will provide you an on-site estimate and walk you through our service options.
+            </p>
 
-            <div class="section__AItemWrapper">
-              <div class="section__aboutTitleBlock">
-                <h2 class="section__titleAbout">Our Mission</h2>
-              </div>
+            <div>
+              <form id="form" class="form">
+                <input id="name" placeholder="Your Name *" type="text" class="form__name">
+                
+                <div class="form__requiredFieldWrapper js-form__requiredFieldWrapper--Name ">
+                  <p class="form__requiredField js-form__requiredField--Name">Please fill in the required field.</p>
+                </div>
 
-              <p class="section__infoAbout">
-                Our company is committed to establishing lasting relationships with our customers by exceeding their expectations and gaining their trust through exceptional performance by every member of the construction team. We are proud of our company, our employees, and our past performance.
-              </p>
-            </div>
+                <input placeholder="Your Phone *" id="tel" type="tel" class="form__tel">
 
-            <div class="section__AItemWrapper">
-              <div class="section__aboutTitleBlock">
-                <h2 class="section__titleAbout">Mission Statement</h2>
-              </div>
+                <div class="form__requiredFieldWrapper js-form__requiredFieldWrapper--Tel">
+                  <p class="form__requiredField js-form__requiredField--Tel">Please fill in the required field.</p>
+                </div>
 
-              <p class="section__infoAbout">
-                We are a company that was developed on a desire to make home improvement and maintenance a simple and comfortable experience for our clients. We do this by personally providing service in all areas of home maintenance, remodeling, and new construction. We strive to deliver quality construction and superior products to our clients in a professional, honest, and timely manner.
-              </p>
+                <select id="select" class="form__select">
+                  <option value="" class="form__select-option" disabled selected>--Select Project Type--</option>
+                  <option value="construction" class="form__select-option">construction</option>
+                </select>
+
+                <input id="email" placeholder="Your Email" type="email" class="form__email">
+
+                <textarea id="message" placeholder="Message" name=""></textarea>
+
+                <button type="submit" class="button button--center">
+                  <div class="button__link">sent message</div>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -205,7 +222,7 @@
             At Ediss Construction, we’re committed to customer satisfaction and we prove it with our level of service with our many years of experience in remodeling and construction.
           </p>
 
-          <div class="button">
+          <div class="section__buttonService button">
             <a href="../contact#contact" class="button__link">request a quote</a>
           </div>
         </div>
@@ -235,5 +252,6 @@
   </footer>
 
   <script src="../scriptHeader.js"></script>
+  <script src="../projects.js"></script>
 </body>
 </html>

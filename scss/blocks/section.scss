@@ -12,7 +12,7 @@
     }
   }
 
-  &__servisesTitleInfo {
+  &__servicesTitleInfo {
     background-color: white;
     padding: 30px 15px;
     max-width: 300px;
@@ -25,6 +25,8 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 15px;
+    align-items: center;
+    justify-content: center;
 
     @include xtablet {
       grid-template-columns: auto auto;
@@ -33,6 +35,29 @@
     @include mobile {
       grid-template-columns: auto;
     }
+  }
+
+  &__wrapService {
+    height: 100%;
+    width: 100%;
+    max-width: 306px; 
+    min-width: 180px; 
+    background-color: #fff;
+    border-radius: 10px;
+
+    & > .service {
+      height: fit-content;
+    }
+  }
+
+  &__serviceInfoText {
+    @include text($secondTextColor, 15px, 400, 1.8);
+    margin: 20px;
+
+  }
+
+  &__buttonService {
+    margin: 0 20px 20px 20px;
   }
 
   &__serviseTitle {
@@ -345,6 +370,25 @@
     &:hover {
       color: $textColor;
     }
+  }
+
+  &__subtitleContact {
+    @include text($secondaryTextColor, 15px, 400, 2);
+    transition: all .3s;
+
+    &:hover {
+      color: $textColor;
+    }
+  }
+
+  &__subtitleSchedule {
+    @include text($textColor, 15px, 400, 1.8);
+    display: block;
+    margin-top: 15px;
+  }
+
+  &__CwhoWeAre--min {
+    min-width: 250px;
   }
 }
 
