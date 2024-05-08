@@ -1,6 +1,12 @@
 .logo {
-  width: 250px;
-  height: 80px;
-  background-color: rgb(172, 206, 206);
+  width: 160px;
+  height: 110px;
   margin: 0 auto;
+  overflow: hidden;
+
+  & > img {
+    width: 230px;
+    height: 200px;
+    object-position: -35px -38px;
+  }
 }
