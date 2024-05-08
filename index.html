@@ -412,7 +412,9 @@
                 </ul>
               </div>
               <div id="projects-list" class="projects__items">
-                <div class="projects__itemWraper" data-type="bathroom" data-id="1">
+
+                <!-- insert items examples work here -->
+                <div class="projects__itemWraper" data-type="bathroom" data-id="07052024">
                   <div class="projects__item">
                     <div class="projects__shaddow">
                       <a
@@ -432,7 +434,7 @@
                     <div class="projects__imgBlock">
                       <img
                         class="projects__img"
-                        src="./images/services/bathroom/07.05.2024/bathroom-remodeling-memphis-tn-3-600x413.jpg"
+                        src="./images/services/bathroom/07052024/bathroom-remodeling-memphis-tn-3-600x413.jpg"
                       />
                     </div>
                   </div>
@@ -775,6 +777,29 @@
       <p>Something went wrong. Please try again.</p>
     </div>
     <div id="success" class="success"><p>Data sent successfully.</p></div>
+    
+
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__block">
+          <div id="modal-spin" class="modal__spin">
+            <div class="modal__spiner"></div>
+          </div>
+          <button id="closeModal" class="modal__close"></button>
+          <div data-action="change-picture" data-id="button-prev-picture" class="modal__arrow modal__arrow--prev">
+          </div>
+          <div class="modal__wrapperImages">
+            <div id="containerImgModal" class="modal__wrapperImagesFull">
+              <div class="modal__fakeImg"></div>
+            </div>
+
+
+          </div>
+          <div data-action="change-picture" data-id="button-next-picture" class="modal__arrow modal__arrow--next">
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="./scriptHeader.js"></script>
     <script src="./downListQ.js"></script>
     <script src="./form.js"></script>
