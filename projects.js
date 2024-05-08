@@ -83,14 +83,6 @@ const dataOfObjectsImagesProgect = {
           sizes: '(max-width: 960px) 100vw, 960px',
           title: '',
           alt: 'bathroom-remodeling-memphis-tn-3'
-        },
-        {
-          id: '10',
-          src: './images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN.jpg',
-          srcset: './images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN.jpg 960w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-150x150.jpg 150w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-300x300.jpg 300w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-768x768.jpg 768w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-50x50.jpg 50w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-555x555.jpg 555w, ./images/services/bathroom/07052024/Bathroom-Remodeling-Memphis-TN-600x600.jpg 600w',
-          sizes: '(max-width: 960px) 100vw, 960px',
-          title: '',
-          alt: 'bathroom-remodeling-memphis-tn-3'
         }
       ],
       
@@ -191,7 +183,7 @@ function openModalWindow(e) {
     indexOfActiveElementForModalImage = indexOfActiveElementForModalImage + 1 > arrayOfImages.length -1 ? 0 : indexOfActiveElementForModalImage + 1;
   }
 
-  console.log(indexOfActiveElementForModalImage, arrayOfImages.length);
+  console.log(indexOfActiveElementForModalImage);
 
   const img = createImage(arrayOfImages, indexOfActiveElementForModalImage, typeOfElementForModalImage);
 
