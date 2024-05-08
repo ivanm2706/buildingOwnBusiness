@@ -1697,7 +1697,7 @@ button {
   animation: rotate 1s linear infinite;
 }
 .modal__img {
-  max-width: 90vw;
+  max-width: 80vw;
   max-height: 90vh;
   border-radius: 20px;
 }
