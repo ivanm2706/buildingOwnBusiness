@@ -464,6 +464,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    height: fit-content;
 
     & > div {
       max-width: 280px;

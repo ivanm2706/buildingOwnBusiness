@@ -1036,6 +1036,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  height: fit-content;
 }
 .section__imagesProject > div {
   max-width: 280px;
