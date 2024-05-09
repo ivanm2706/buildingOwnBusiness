@@ -163,6 +163,51 @@ const dataOfObjectsImagesProgect = {
         title: '',
         alt: 'bathroom-remodeling-memphis-downtown'
       }]
+    },
+    '10052024': {
+      arrayOfImages: [{
+        id: '1',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '2',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '3',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '4',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '5',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '6',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }]
     }
   },
   'patio-outdoor': {
@@ -305,6 +350,53 @@ const dataOfObjectsImagesProgect = {
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
+      }]
+    }
+  },
+  'kitchen': {
+    '10052024': {
+      arrayOfImages: [{
+        id: '1',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '2',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-2-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '3',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-3-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '4',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-4-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '5',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-5-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '6',
+        src: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6.jpg',
+        srcset: './images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6.jpg 960w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-150x150.jpg 150w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-300x300.jpg 300w, ./images/services/bathroom/10052024/bathroom-and-kitchen-remodeling-6-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
       }]
     }
   }
