@@ -38,6 +38,7 @@
   &__Maintitle {
     @include text(#fff, 40px, 400, 1.1);
     margin-bottom: 5px;
+    text-transform: capitalize;
   }
 
   &__blockNavShowWhereYouAre {
@@ -60,6 +61,7 @@
     border-bottom: 1px solid transparent;
     transition: all .3s;
     position: relative;
+    text-transform: capitalize;
 
     &:hover {
       border-bottom-color: $secondaryTextColor;
@@ -70,5 +72,9 @@
       position: absolute;
       right: -20px;
     }
+  }
+
+  &__currentPage {
+    text-transform: capitalize;
   }
 }

@@ -253,6 +253,7 @@ button {
   line-height: 1.1;
   font-weight: 400;
   margin-bottom: 5px;
+  text-transform: capitalize;
 }
 .mainHeader__blockNavShowWhereYouAre {
   color: #ccc;
@@ -276,6 +277,7 @@ button {
   border-bottom: 1px solid transparent;
   transition: all 0.3s;
   position: relative;
+  text-transform: capitalize;
 }
 .mainHeader__previosPage:hover {
   border-bottom-color: #61c008;
@@ -284,6 +286,9 @@ button {
   content: ">";
   position: absolute;
   right: -20px;
+}
+.mainHeader__currentPage {
+  text-transform: capitalize;
 }
 
 .mainNav {
@@ -969,6 +974,84 @@ button {
 }
 .section__CwhoWeAre--min {
   min-width: 250px;
+}
+.section__wrapperProject {
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .section__wrapperProject {
+    grid-template-columns: auto;
+  }
+}
+.section__titleProject {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.section__blockOfInfo {
+  color: #777;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.section__infoText {
+  color: black;
+}
+.section__infoText > span {
+  text-transform: capitalize;
+}
+.section__itemWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #61c008;
+}
+.section__iconProject {
+  padding-right: 10px;
+  border-right: 1px solid #61c008;
+}
+.section__iconProject > span {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(./images/icons/cube.svg);
+  background-position: -4px -1px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+}
+.section__subtitleInfoProject {
+  color: #777;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.section__imagesProject {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.section__imagesProject > div {
+  max-width: 280px;
+  min-width: 180px;
+  min-height: 180px;
+  height: 100%;
+  max-height: 280px;
+  width: 100%;
+  overflow: hidden;
+}
+.section__imagesProject img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .service {

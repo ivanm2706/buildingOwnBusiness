@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Construction and remodeling</title>
-    <base href="../../../">
+    <base href="../../">
     <link rel="stylesheet" href="style.css" />
     <link sizes="48x48" rel="icon" type="image/svg" href="images/logo/f-icon.svg" >
   </head>
@@ -212,7 +212,7 @@
           </nav>
 
           <div class="mainHeader__containerNavInfo">
-            <h1 class="mainHeader__Maintitle">Bathroom Remodeling Memphis TN</h1>
+            <h1 id="h1" class="mainHeader__Maintitle">Bathroom Remodeling Memphis TN</h1>
             <div class="mainHeader__blockNavShowWhereYouAre">
               <p class="mainHeader__hereYouAre">You are here:</p>
               <ul class="mainHeader__pagesContainer">
@@ -228,12 +228,12 @@
                   </a>
                 </li>
                 <li>
-                  <a class="mainHeader__previosPage" href="services/bathroom#bathroom">
+                  <a id="typeOfProject" class="mainHeader__previosPage" href="services/bathroom#bathroom">
                     Bathroom
                   </a>
                 </li>
                 <li>
-                  <p class="mainHeader__currentPage">
+                  <p id="nameOfPage" class="mainHeader__currentPage">
                     Bathroom Remodeling Memphis TN
                   </p>
                 </li>
@@ -249,7 +249,50 @@
         class="main__section main__section--p50 main__section--grey2Bg section"
       >
         <div class="container">
-          ...
+          <div class="section__wrapperProject">
+            <div>
+              <h2 class="section__titleProject">Project info</h2>
+
+              <div class="section__blockOfInfo">
+                <div class="section__itemWrapper">
+                  <div class="section__iconProject"> <span></span></div>
+                  <div>
+                    <p class="section__infoText">
+                      <strong>Client:</strong>
+                      <span id="client-info"></span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="section__itemWrapper">
+                  <div class="section__iconProject"><span></span></div>
+                  <div>
+                    <p class="section__infoText">
+                      <strong>ProjectType:</strong>
+                      <span id="project-type-info"></span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="section__itemWrapper">
+                  <div class="section__iconProject">
+                    <span></span>
+                  </div>
+                  <div>
+                    <p class="section__infoText">
+                      <strong>Location:</strong>
+                      <span id="location-info"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="section__subtitleInfoProject">MasterCraft Builders has just completed another <span id="name-of-progect-info"></span> Successfully. Are you Interested in having your commercial property renovated? Contact us today for an on site estimate.</p>
+            </div>
+
+            <div id="block-images" class="section__imagesProject">
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -318,6 +361,30 @@
       </div>
     </footer>
 
+
+    <div id="modal" class="modal">
+      <div class="modal__container">
+        <div class="modal__block">
+          <div id="modal-spin" class="modal__spin">
+            <div class="modal__spiner"></div>
+          </div>
+          <button id="closeModal" class="modal__close"></button>
+          <div data-action="change-picture" data-id="button-prev-picture" class="modal__arrow modal__arrow--prev">
+          </div>
+          <div class="modal__wrapperImages">
+            <div id="containerImgModal" class="modal__wrapperImagesFull">
+              <div class="modal__fakeImg"></div>
+            </div>
+
+
+          </div>
+          <div data-action="change-picture" data-id="button-next-picture" class="modal__arrow modal__arrow--next">
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="scriptHeader.js"></script>
+    <script type="module" src="services/project/script.js"></script>
   </body>
 </html>

@@ -399,5 +399,89 @@
   &__CwhoWeAre--min {
     min-width: 250px;
   }
+
+
+
+  // section project
+
+  &__wrapperProject {
+    display: grid;
+    grid-template-columns: 300px auto;
+    gap: 20px;
+
+    @include tablet {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__titleProject {
+    @include text($textColor, 24px, 400, 1.1);
+    margin-bottom: 20px;
+  }
+
+  &__blockOfInfo {
+    @include text($secondTextColor, 15px, 400, 32px);
+    margin-bottom: 30px;
+  }
+
+  &__infoText {
+    color: black;
+
+    & > span {
+      text-transform: capitalize;
+    }
+  }
+
+  &__itemWrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid $secondaryColor;
+  }
+
+  &__iconProject {
+    padding-right: 10px;
+    border-right: 1px solid $secondaryColor;
+
+    & > span {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url(./images/icons/cube.svg);
+      background-position: -4px -1px;
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+    }
+  }
+
+  &__subtitleInfoProject {
+    @include text($secondTextColor, 15px, 400, 32px);
+  }
+
+  &__imagesProject {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    & > div {
+      max-width: 280px;
+      min-width: 180px;
+      min-height: 180px;
+      height: 100%;
+      max-height: 280px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    & img {
+      display: block;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  }
 }
 
