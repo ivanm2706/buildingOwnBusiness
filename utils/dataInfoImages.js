@@ -399,6 +399,81 @@ const dataOfObjectsImagesProgect = {
         alt: 'bathroom and kitchen remodeling'
       }]
     }
+  },
+  'painting': {
+    '10052024': {
+      arrayOfImages: [{
+        id: '1',
+        src: './images/services/painting/10052024/foyer-renovation-before1.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-before1.jpg 960w, ./images/services/painting/10052024/foyer-renovation-before1-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-before1-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-before1-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-before1-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-before1-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-before1-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '2',
+        src: './images/services/painting/10052024/foyer-renovation-before2.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-before2.jpg 960w, ./images/services/painting/10052024/foyer-renovation-before2-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-before2-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-before2-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-before2-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-before2-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-before2-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '3',
+        src: './images/services/painting/10052024/foyer-renovation-before3.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-before3.jpg 960w, ./images/services/painting/10052024/foyer-renovation-before3-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-before3-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-before3-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-before3-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-before3-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-before3-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '4',
+        src: './images/services/painting/10052024/foyer-renovation-before4.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-before4.jpg 960w, ./images/services/painting/10052024/foyer-renovation-before4-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-before4-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-before4-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-before4-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-before4-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-before4-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '5',
+        src: './images/services/painting/10052024/foyer-renovation-after4.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after4.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after4-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after4-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after4-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after4-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after4-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after4-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '6',
+        src: './images/services/painting/10052024/foyer-renovation-after5.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after5.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after5-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after5-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after5-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after5-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after5-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after5-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '7',
+        src: './images/services/painting/10052024/foyer-renovation-after11.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after11.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after11-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after11-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after11-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after11-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after11-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after11-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '8',
+        src: './images/services/painting/10052024/foyer-renovation-after22.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after22.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after22-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after22-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after22-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after22-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after22-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after22-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '9',
+        src: './images/services/painting/10052024/foyer-renovation-after1.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after1.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after1-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after1-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after1-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after1-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after1-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after1-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }, {
+        id: '10',
+        src: './images/services/painting/10052024/foyer-renovation-after3.jpg',
+        srcset: './images/services/painting/10052024/foyer-renovation-after3.jpg 960w, ./images/services/painting/10052024/foyer-renovation-after3-150x150.jpg 150w, ./images/services/painting/10052024/foyer-renovation-after3-300x300.jpg 300w, ./images/services/painting/10052024/foyer-renovation-after3-768x768.jpg 768w, ./images/services/painting/10052024/foyer-renovation-after3-50x50.jpg 50w, ./images/services/painting/10052024/foyer-renovation-after3-555x555.jpg 555w, ./images/services/painting/10052024/foyer-renovation-after3-600x600.jpg 600w',
+        sizes: '(max-width: 960px) 100vw, 960px',
+        title: '',
+        alt: 'painting'
+      }]
+    }
   }
 };
 
