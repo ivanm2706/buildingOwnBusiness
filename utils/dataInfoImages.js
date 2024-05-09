@@ -238,70 +238,70 @@ const dataOfObjectsImagesProgect = {
       arrayOfImages: [{
         id: '1',
         src: './images/services/additional/09052024/stears-memphis-tn-1.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-1.jpg 960w, stears-memphis-tn-1-150x150.jpg 150w, stears-memphis-tn-1-300x300.jpg 300w, stears-memphis-tn-1-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-1.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-1-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-1-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-1-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '2',
         src: './images/services/additional/09052024/stears-memphis-tn-2.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-2.jpg 960w, stears-memphis-tn-2-150x150.jpg 150w, stears-memphis-tn-2-300x300.jpg 300w, stears-memphis-tn-2-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-2.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-2-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-2-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-2-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '3',
         src: './images/services/additional/09052024/stears-memphis-tn-3.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-3.jpg 960w, stears-memphis-tn-3-150x150.jpg 150w, stears-memphis-tn-3-300x300.jpg 300w, stears-memphis-tn-3-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-3.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-3-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-3-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-3-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '4',
         src: './images/services/additional/09052024/stears-memphis-tn-4.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-4.jpg 960w, stears-memphis-tn-4-150x150.jpg 150w, stears-memphis-tn-4-300x300.jpg 300w, stears-memphis-tn-4-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-4.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-4-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-4-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-4-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '5',
         src: './images/services/additional/09052024/stears-memphis-tn-5.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-5.jpg 960w, stears-memphis-tn-5-150x150.jpg 150w, stears-memphis-tn-5-300x300.jpg 300w, stears-memphis-tn-5-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-5.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-5-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-5-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-5-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '6',
         src: './images/services/additional/09052024/stears-memphis-tn-6.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-6.jpg 960w, stears-memphis-tn-6-150x150.jpg 150w, stears-memphis-tn-6-300x300.jpg 300w, stears-memphis-tn-6-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-6.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-6-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-6-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-6-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '7',
         src: './images/services/additional/09052024/stears-memphis-tn-7.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-7.jpg 960w, stears-memphis-tn-7-150x150.jpg 150w, stears-memphis-tn-7-300x300.jpg 300w, stears-memphis-tn-7-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-7.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-7-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-7-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-7-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '8',
         src: './images/services/additional/09052024/stears-memphis-tn-8.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-8.jpg 960w, stears-memphis-tn-8-150x150.jpg 150w, stears-memphis-tn-8-300x300.jpg 300w, stears-memphis-tn-8-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-8.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-8-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-8-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-8-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '9',
         src: './images/services/additional/09052024/stears-memphis-tn-9.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-9.jpg 960w, stears-memphis-tn-9-150x150.jpg 150w, stears-memphis-tn-9-300x300.jpg 300w, stears-memphis-tn-9-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-9.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-9-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-9-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-9-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
       }, {
         id: '10',
         src: './images/services/additional/09052024/stears-memphis-tn-10.jpg',
-        srcset: './images/services/additional/09052024/stears-memphis-tn-10.jpg 960w, stears-memphis-tn-10-150x150.jpg 150w, stears-memphis-tn-10-300x300.jpg 300w, stears-memphis-tn-10-600x600.jpg 600w',
+        srcset: './images/services/additional/09052024/stears-memphis-tn-10.jpg 960w, ./images/services/additional/09052024/stears-memphis-tn-10-150x150.jpg 150w, ./images/services/additional/09052024/stears-memphis-tn-10-300x300.jpg 300w, ./images/services/additional/09052024/stears-memphis-tn-10-600x600.jpg 600w',
         sizes: '(max-width: 960px) 100vw, 960px',
         title: '',
         alt: 'brick-work-memphis-tn'
