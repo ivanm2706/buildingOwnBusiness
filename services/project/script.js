@@ -71,7 +71,7 @@ function openModalWindow(e) {
   openModal();
 
   if (e.target.dataset.id === 'buttonQuickView') {
-    indexOfActiveElementForModalImage = e.target.dataset.index;
+    indexOfActiveElementForModalImage = +e.target.dataset.index;
   }
 
   if (e.target.dataset.id === 'button-prev-picture') {
@@ -105,8 +105,8 @@ function createImageForModal(arr, i, type) {
     img.sizes = `${arr[i].sizes}`;
   }
   
-  img.alt = `${arr[i].srcset}`;
-  img.title = `${arr[i].srcset}`;
+  img.alt = `${arr[i].alt}`;
+  img.title = `${arr[i].title}`;
   img.dataset.id = `${i}`;
   img.dataset.type = `${type}`;
 

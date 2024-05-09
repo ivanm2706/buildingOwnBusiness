@@ -80,10 +80,12 @@ function openModalWindow(e) {
   if (e.target.dataset.id === 'buttonQuickView') {
     idElementForModalImage = parent.dataset.id;
     typeOfElementForModalImage = parent.dataset.type;
-    indexOfActiveElementForModalImage = e.target.dataset.index;
+    indexOfActiveElementForModalImage = +e.target.dataset.index;
   }
 
   const { arrayOfImages } = dataOfObjectsImagesProgect[typeOfElementForModalImage][idElementForModalImage];
+
+  
 
   if (e.target.dataset.id === 'button-prev-picture') {
     indexOfActiveElementForModalImage = indexOfActiveElementForModalImage - 1 < 0 ? arrayOfImages.length - 1 : indexOfActiveElementForModalImage - 1;
@@ -91,9 +93,9 @@ function openModalWindow(e) {
   }
 
   if (e.target.dataset.id === 'button-next-picture') {
-    indexOfActiveElementForModalImage = indexOfActiveElementForModalImage + 1 > arrayOfImages.length -1 ? 0 : indexOfActiveElementForModalImage + 1;
+    indexOfActiveElementForModalImage = indexOfActiveElementForModalImage + 1 > arrayOfImages.length - 1 ? 0 : indexOfActiveElementForModalImage + 1;
   }
-
+  
   const img = createImage(arrayOfImages, indexOfActiveElementForModalImage, typeOfElementForModalImage);
 
   const containerImg = modal.querySelector('#containerImgModal');
@@ -116,8 +118,8 @@ function createImage(arr, i, type) {
     img.sizes = `${arr[i].sizes}`;
   }
   
-  img.alt = `${arr[i].srcset}`;
-  img.title = `${arr[i].srcset}`;
+  img.alt = `${arr[i].alt}`;
+  img.title = `${arr[i].title}`;
   img.dataset.id = `${i}`;
   img.dataset.type = `${type}`;
 
