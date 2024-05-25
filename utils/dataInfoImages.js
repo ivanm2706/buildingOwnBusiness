@@ -208,6 +208,65 @@ const dataOfObjectsImagesProgect = {
         title: '',
         alt: 'bathroom and kitchen remodeling'
       }]
+    },
+    '25052024': {
+      arrayOfImages: [{
+        id: '1',
+        src: './images/services/bathroom/25052024/bathroom_cordova_1.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '2',
+        src: './images/services/bathroom/25052024/bathroom_cordova_2.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '3',
+        src: './images/services/bathroom/25052024/bathroom_cordova_3.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '4',
+        src: './images/services/bathroom/25052024/bathroom_cordova_4.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '5',
+        src: './images/services/bathroom/25052024/bathroom_cordova_5.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '6',
+        src: './images/services/bathroom/25052024/bathroom_cordova_6.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '7',
+        src: './images/services/bathroom/25052024/bathroom_cordova_7.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }, {
+        id: '8',
+        src: './images/services/bathroom/25052024/bathroom_cordova_8.jpg',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'bathroom and kitchen remodeling'
+      }]
     }
   },
   'patio-outdoor': {
