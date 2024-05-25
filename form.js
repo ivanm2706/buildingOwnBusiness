@@ -70,7 +70,7 @@ const botToken = '';
 const chatId = '';
 
 // URL для отправки сообщения
-const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+const apiUrl = 'https://api.telegram.org/bot6638623940:AAFB2ScV-fOG0XFx_T3PHDnaPadPwb7ANY8/sendMessage';
 
 // Опции для POST-запроса
 const options = {
@@ -79,7 +79,7 @@ const options = {
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({
-    chat_id: chatId,
+    chat_id: 1007310681,
     text: messageText,
   }),
 };
