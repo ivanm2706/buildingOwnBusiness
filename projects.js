@@ -85,7 +85,6 @@ function openModalWindow(e) {
 
   const { arrayOfImages } = dataOfObjectsImagesProgect[typeOfElementForModalImage][idElementForModalImage];
 
-  
 
   if (e.target.dataset.id === 'button-prev-picture') {
     indexOfActiveElementForModalImage = indexOfActiveElementForModalImage - 1 < 0 ? arrayOfImages.length - 1 : indexOfActiveElementForModalImage - 1;
@@ -97,13 +96,13 @@ function openModalWindow(e) {
   }
   
   const img = createImage(arrayOfImages, indexOfActiveElementForModalImage, typeOfElementForModalImage);
+  
 
   const containerImg = modal.querySelector('#containerImgModal');
 
   img.onload = () => {
     containerImg.innerHTML = '';
     containerImg.append(img);
-    
     deactivateSpinWhenLoad();
   }
 };

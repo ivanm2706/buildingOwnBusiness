@@ -533,6 +533,137 @@ const dataOfObjectsImagesProgect = {
         alt: 'painting'
       }]
     }
+  },
+  'home-remodeling': {
+    '04062024':  {
+      arrayOfImages: [{
+        id: '1',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-1.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '2',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-2.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '3',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-3.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '4',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-4.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '5',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-5.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '6',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-6.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '7',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-7.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '8',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-8.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '9',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-9.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '10',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-10.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '11',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-11.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '12',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-12.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '13',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-13.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '14',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-14.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '15',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-15.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '16',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-16.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '17',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-17.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }, {
+        id: '18',
+        src: './images/services/home-remodeling/04062024/home-remodeling-edje-18.webp',
+        srcset: '',
+        sizes: '',
+        title: '',
+        alt: 'home remodeling'
+      }]
+    }
   }
 };
 
